@@ -36,7 +36,7 @@ Happiness score by region
 \
 Note that this rank is based on only two years of data and may vary significantly from year to year.
 
-Correlations
+Correlations \
 ![Screen Shot 2021-05-20 at 2 59 36 PM](https://user-images.githubusercontent.com/54850909/119041253-040d5d00-b97c-11eb-809d-5f37043e35fd.png)
 \
 Heatmap - visual representation of correlations \
