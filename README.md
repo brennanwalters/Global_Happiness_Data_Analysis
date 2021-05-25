@@ -1,13 +1,14 @@
-# Global Happiness Data Analysis and Prediction
+![Screen Shot 2021-05-24 at 8 09 24 PM](https://user-images.githubusercontent.com/54850909/119424896-f9c8c700-bccb-11eb-9b5d-84423ce95adc.png)
 
-Data: Kaggle - https://www.kaggle.com/unsdsn/world-happiness
-
-## Project Description
+## Introduction
 This was my very first data science project for a data scince course I took in 2018. My goal was to examine what factors contribute to a society's happiness, how those factors relate, and which are the most important in predicting happiness or overall quality of living. 
 
-## Data Overview
-The data measures the overall happiness of people groups in 157 countries (9 regions)
-Scores 7 factors: Economy, Family, Life Expectancy, Freedom, Trust (government), Generosity, and Dystopia residual (dystopia refers to  a society characterized by human misery or oppression).
+## Data Description
+
+Source: Kaggle - https://www.kaggle.com/unsdsn/world-happiness
+
+* The data measures the overall happiness of people groups in 157 countries (9 regions)
+* Scores 7 factors: Economy, Family, Life Expectancy, Freedom, Trust (government), Generosity, and Dystopia residual (dystopia refers to  a society characterized by human misery or oppression).
 
 Categorical variables:
 * Country
