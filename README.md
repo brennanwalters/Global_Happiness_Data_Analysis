@@ -71,7 +71,7 @@ As I was a data science newbie, I was very happy that both of the prediction mod
 
 ### K-Neighbors Regression
 
-**Determine Best K value**
+**Determine Best K value** \
 ![Screen Shot 2021-05-26 at 10 29 31 PM](https://user-images.githubusercontent.com/54850909/119761678-dccdf880-be71-11eb-99a2-86b069a2eb66.png)
 
 ![Screen Shot 2021-05-26 at 10 28 57 PM](https://user-images.githubusercontent.com/54850909/119761638-c7f16500-be71-11eb-8c77-88ca60bf6977.png)
