@@ -1,20 +1,20 @@
 ![Screen Shot 2021-05-24 at 8 09 24 PM](https://user-images.githubusercontent.com/54850909/119424896-f9c8c700-bccb-11eb-9b5d-84423ce95adc.png)
 
-## Table of Contents
+# Table of Contents
 * Introduction
 * Data Overview
-* Exploratory and Visual Analysis
+* Analysis Results
 * Prediction
 * Conclusion
 
-## Introduction
+# Introduction
 This was my very first data science project for a data scince course I took in 2018. My goal was to examine what factors contribute to a society's happiness, how those factors relate, and which are the most important in predicting happiness or overall quality of living. I wanted to answer questions such as:
 
 * According to this data, which regions have the highest quality of life and which have the lowest?
 * What factors are most strongly related to a society's happiness or quality of life?
 * How are those factors related?
 
-## Data Overview
+# Data Overview
 
 Source: [Kaggle](https://www.kaggle.com/unsdsn/world-happiness)
 
@@ -39,14 +39,14 @@ Includes:
 
 At the time of this analysys, data was available up to 2017. The 2017 data, however, did not include Region. Because I was interested in using Region in this analysis, I decidd not to include the 2017 data in my final data frame. 
 
-## Exploratory and Visual Analysis
+# Analysis Results
 
 ### Happiness score by region
 ![Screen Shot 2021-05-20 at 2 57 50 PM](https://user-images.githubusercontent.com/54850909/119041065-c7416600-b97b-11eb-896d-8fcfd9bb62c0.png)
 
 Note that this rank is based on only two years of data and may vary significantly from year to year.
 
-### Correlations
+## Correlations
 ![Screen Shot 2021-05-20 at 2 59 36 PM](https://user-images.githubusercontent.com/54850909/119041253-040d5d00-b97c-11eb-809d-5f37043e35fd.png)
 
 
@@ -69,14 +69,12 @@ In this heatmap, lightest colors show positive correlations between variables an
 * As Economy score increases, Happiness Score increases
 * Government trust seems to have a non-linear relationship with Happiness Score
 
-## Prediction
+# Prediction
 As I was a data science newbie, I was very happy that both of the prediction models below had extremely high accuracies. I later realized that this was because Happiness Score is the sum of the all Family, Economy, Life Span, Generosity, Trust, Freedom, and Dystopia Residual scores. Thus, predicting Happiness Score based on these factors is not all that meaningful. Although I wish I had known this at the time, it still gave me valuable experience with prediction.
 
 ### Training and Testing data
 **Dependant variable:** Happiness Score \
 **Factors:** Family, Economy, Life Span, Generosity, Trust, Freedom, Dystopia Residual
-
-![Screen Shot 2021-05-26 at 10 26 49 PM](https://user-images.githubusercontent.com/54850909/119761596-b14b0e00-be71-11eb-9744-129254c50737.png)
 
 ### Linear Regression
 ![Screen Shot 2021-05-26 at 10 02 19 PM](https://user-images.githubusercontent.com/54850909/119759567-1a308700-be6e-11eb-8099-db610f78fce7.png)
@@ -91,8 +89,6 @@ As I was a data science newbie, I was very happy that both of the prediction mod
 ![Screen Shot 2021-05-26 at 10 28 57 PM](https://user-images.githubusercontent.com/54850909/119761638-c7f16500-be71-11eb-8c77-88ca60bf6977.png)
 
 Best value is K=3
-
-![Screen Shot 2021-05-26 at 10 55 03 PM](https://user-images.githubusercontent.com/54850909/119763588-71862580-be75-11eb-8d99-a78954cca97f.png)
 
 ![Screen Shot 2021-05-26 at 10 37 16 PM](https://user-images.githubusercontent.com/54850909/119762259-fa4f9200-be72-11eb-839a-128a17e1c24c.png)
 
