@@ -8,17 +8,11 @@
 * Conclusion
 
 # Introduction
-This was my very first data science project for a data scince course I took in 2018. My goal was to examine what factors contribute to a society's happiness, how those factors relate, and which are the most important in predicting happiness or overall quality of living. I wanted to answer questions such as:
-
-* According to this data, which regions have the highest quality of life and which have the lowest?
-* What factors are most strongly related to a society's happiness or quality of life?
-* How are those factors related?
+This was my very first data science project for a course I took in 2018. My goal was to examine which regions are the happiest, what factors contribute to a society's happiness, how those factors relate, and which are the most important in predicting happiness or overall quality of living. 
 
 # Data Overview
 
 Source: [Kaggle](https://www.kaggle.com/unsdsn/world-happiness)
-
-Data collection:
 
 Includes:
 * Country (157 in total)
@@ -33,9 +27,11 @@ Includes:
   * Dystopia Residual (misery or oppression)
 * Happiness Rank - rank given to each country based on happiness score (1 being the highest rank)
 
+### Data collection 
+According to the Content section of the Kaggle data description, "The happiness scores and rankings use data from the Gallup World Poll. The scores are based on answers to the main life evaluation question asked in the poll. This question, known as the Cantril ladder, asks respondents to think of a ladder with the best possible life for them being a 10 and the worst possible life being a 0 and to rate their own current lives on that scale."
+
 ### Summary
 ![Screen Shot 2021-05-20 at 2 50 22 PM](https://user-images.githubusercontent.com/54850909/119040250-c956f500-b97a-11eb-907e-42e996b32c8a.png)
-
 
 At the time of this analysys, data was available up to 2017. The 2017 data, however, did not include Region. Because I was interested in using Region in this analysis, I decidd not to include the 2017 data in my final data frame. 
 
@@ -44,7 +40,9 @@ At the time of this analysys, data was available up to 2017. The 2017 data, howe
 ### Happiness score by region
 ![Screen Shot 2021-05-20 at 2 57 50 PM](https://user-images.githubusercontent.com/54850909/119041065-c7416600-b97b-11eb-896d-8fcfd9bb62c0.png)
 
-Note that this rank is based on only two years of data and may vary significantly from year to year.
+* Australia and New Zealand had the highest overall happiness score
+* Sub-Saharen Africa had the lowest overall happiness score
+* Note that this rank is based on only two years of data and may vary significantly from year to year.
 
 ## Correlations
 ![Screen Shot 2021-05-20 at 2 59 36 PM](https://user-images.githubusercontent.com/54850909/119041253-040d5d00-b97c-11eb-809d-5f37043e35fd.png)
@@ -53,7 +51,7 @@ Note that this rank is based on only two years of data and may vary significantl
 ### Heatmap - visual representation of correlations
 ![Screen Shot 2021-05-20 at 2 58 55 PM](https://user-images.githubusercontent.com/54850909/119041181-ea6c1580-b97b-11eb-88db-5f5198df8e89.png)
 
-In this heatmap, lightest colors show positive correlations between variables and darkest colors show negative correlations between variables. My goal was to examine the relationships between these variables and use them to predict the happiness score.
+In this heatmap, lightest colors show positive correlations between variables and darkest colors show negative correlations between variables. My goal was to examine the relationships between these variables and use them to predict the happiness score. Here we see that Economy, Family, and Life Span are most positively correlated with Happiness Score.
 
 ### Pairplot for Happiness Score, Family, Life Span, Generosity
 ![image](https://user-images.githubusercontent.com/54850909/119758211-c7ee6680-be6b-11eb-85c5-7c21bf45ddc1.png)
@@ -70,7 +68,7 @@ In this heatmap, lightest colors show positive correlations between variables an
 * Government trust seems to have a non-linear relationship with Happiness Score
 
 # Prediction
-As I was a data science newbie, I was very happy that both of the prediction models below had extremely high accuracies. I later realized that this was because Happiness Score is the sum of the all Family, Economy, Life Span, Generosity, Trust, Freedom, and Dystopia Residual scores. Thus, predicting Happiness Score based on these factors is not all that meaningful. Although I wish I had known this at the time, it still gave me valuable experience with prediction.
+At the time of this analysis, I was very happy that both of the prediction models below had extremely high accuracies. I later realized that this was because Happiness Score is the sum of all the Family, Economy, Life Span, Generosity, Trust, Freedom, and Dystopia Residual scores. Thus, predicting Happiness Score based on these factors is not all that meaningful. Although I wish I had known this at the time, it still gave me valuable experience building prediction models.
 
 ### Training and Testing data
 **Dependant variable:** Happiness Score \
@@ -95,4 +93,7 @@ Best value is K=3
 Accuracy = 0.965
 
 ## Conclusion
+* From the 2015 to 2016 data, I found that Australia and New Zealand had the highest overall happiness score and Sub-Saharen Africa had the lowest overall happiness score
+* All of these factors contribute to a society's happiness
+* Of the 7 factors, Economy, Family, and Life Span should be focused on when considering quality of human life.
 
