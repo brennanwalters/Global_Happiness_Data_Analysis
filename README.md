@@ -8,7 +8,7 @@
 * Conclusion
 
 # Introduction
-This was my very first data science project for a course I took in 2018. My goal was to examine which regions are the happiest, what factors contribute to a society's happiness, how those factors relate, and which are the most important in predicting happiness or overall quality of living. 
+This was my very first data science project and marks the beginning of my data science journey. My goal was to examine in which regions people are the happiest, what factors contribute to a society's happiness, how those factors relate, and which are the most important in predicting happiness or overall quality of living. 
 
 # Data Overview
 
